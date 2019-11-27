@@ -13,6 +13,7 @@ class UsersController < ApplicationController
         define_user
     end
 
+    
     def update
         @user.update(user_strong_params)
         redirect_to (user_path(@user))
